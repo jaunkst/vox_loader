@@ -1,7 +1,7 @@
 #[macro_use]
 extern crate byteorder;
-
-pub mod vox_loader;
+mod vox_loader;
+pub use vox_loader::VoxLoader;
 
 #[test]
 fn it_works() {
