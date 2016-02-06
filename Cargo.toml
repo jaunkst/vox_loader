@@ -1,0 +1,7 @@
+[package]
+name = "vox_loader"
+version = "0.1.0"
+authors = ["Jason Aunkst <jaunkst@gmail.com>"]
+
+[dependencies]
+byteorder = "0.4.2"
