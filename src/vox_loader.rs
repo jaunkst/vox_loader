@@ -7,7 +7,6 @@ use std::path::Path;
 use std::io::Cursor;
 use byteorder::{LittleEndian, BigEndian, ReadBytesExt};
 
-#[derive(Copy, Clone)]
 pub struct Voxel {
     x: u8,
     y: u8,
