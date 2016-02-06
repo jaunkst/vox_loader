@@ -19,7 +19,7 @@ impl fmt::Debug for Voxel {
     }
 }
 
-struct Size {
+pub struct Size {
     x: u32,
     y: u32,
     z: u32
@@ -34,9 +34,9 @@ pub struct VoxLoader {
     filepath: &'static str,
     data: Vec<u8>,
     offset: usize,
-    size: Size,
-    voxels: Vec<Vec<Voxel>>,
-    palette: Vec<u32>,
+    pub size: Size,
+    pub voxels: Vec<Vec<Voxel>>,
+    pub palette: Vec<u32>,
 }
 impl fmt::Debug for VoxLoader {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -156,4 +156,5 @@ impl VoxLoader {
         self.read_int(false);
         self.read_chunk();
     }
+
 }
