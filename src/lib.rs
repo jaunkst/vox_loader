@@ -2,6 +2,7 @@
 extern crate byteorder;
 mod vox_loader;
 pub use vox_loader::VoxLoader;
+pub use vox_loader::Voxel;
 
 #[test]
 fn it_works() {
