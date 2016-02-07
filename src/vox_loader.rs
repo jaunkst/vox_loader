@@ -8,10 +8,10 @@ use std::io::Cursor;
 use byteorder::{LittleEndian, BigEndian, ReadBytesExt};
 
 pub struct Voxel {
-    x: u8,
-    y: u8,
-    z: u8,
-    c: u8
+    pub x: u8,
+    pub y: u8,
+    pub z: u8,
+    pub c: u8
 }
 impl fmt::Debug for Voxel {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -20,9 +20,9 @@ impl fmt::Debug for Voxel {
 }
 
 pub struct Size {
-    x: u32,
-    y: u32,
-    z: u32
+    pub x: u32,
+    pub y: u32,
+    pub z: u32
 }
 impl fmt::Debug for Size {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
